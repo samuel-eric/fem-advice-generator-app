@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
 
+    <!-- connect css -->
     <link rel="stylesheet" href="style.css">
 
     <title>Frontend Mentor | Advice generator app</title>
@@ -35,10 +36,9 @@
 
   <body>
     <main>
-      <h1 class="advice-title">Advice #<span>ID</span></h1>
-      <p class="advice-content">"<span>It is easy to sit up and take notice, what's difficult is getting up and taking
-          action.</span>"</p>
-      <img src="images/pattern-divider-desktop.svg" alt="divider" class="divider" />
+      <h1 class="advice-title">Advice #<span id="advice-id">ID</span></h1>
+      <p class="advice-content"><span id="advice">Loading...</span></p>
+      <img src="images/pattern-divider-desktop.svg" alt="divider" class="divider" id="divider" />
       <button id="advice-btn">
         <img src="images/icon-dice.svg" alt="Dice Icon" />
       </button>
@@ -46,8 +46,10 @@
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">sericy</a>.
     </div>
+
+    <script src="script.js"></script>
   </body>
 
 </html>
